@@ -42,10 +42,10 @@ public class SwiftFileHandlerTest {
     
     @BeforeClass
     public static void setUpClass() {
-        swift.setEndpoint("http://196.252.231.49:35357/v2.0/");
+        swift.setEndpoint("http://127.0.0.1:35357/v2.0/");
         swift.setRegion("regionOne");
         swift.setIdentity("OC:ocsakai");
-        swift.setCredential("00sakai99");
+        swift.setCredential("yoursecretpassword");
         swift.setDeleteEmptyContainers(true);
         swift.init();
         Random r = new Random(System.currentTimeMillis());
